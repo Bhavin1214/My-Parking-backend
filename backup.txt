@@ -1,0 +1,22 @@
+user.js
+
+console.log("user.js file loaded succsesfully")
+
+var userName = "bhavin"
+var userAge = 21
+const userPrint = function () {
+        console.log("user print function called")
+}
+
+module.exports={
+    userName,userAge,userPrint
+}
+
+app.js 
+console.log("this file is app.js")
+var user=require("./user")
+
+console.log(user)
+console.log(user.userName)
+console.log(user.userAge)
+console.log(user.userPrint())
