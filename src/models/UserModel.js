@@ -8,11 +8,7 @@ const userSchema = new schema({
         unique: true,
         required: true
     },
-    firstName: {
-        type: String,
-        required: true
-    },
-    lastName: {
+    name: {
         type: String,
         required: true
     },
@@ -36,7 +32,7 @@ const userSchema = new schema({
     },
     role: {
         type: String,
-        enum: ['Admin', 'Security', 'User', 'ParkingOwner'],
+        enum: ['Admin', 'User', 'ParkingOwner'],
         required: true
     },
     otp: {

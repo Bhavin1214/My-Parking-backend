@@ -30,7 +30,11 @@ app.use("/location",locationroute)
 const vehicleroute = require("./src/routes/VehicleRoute")
 app.use("/vehicle",vehicleroute)
 
+const parkingroute = require("./src/routes/ParkingRoute")
+app.use("/parking",parkingroute)
 
+const reserveroute = require("./src/routes/ReservationRoute")
+app.use("/reservation",reserveroute)
 
 
 mongoose.connect("mongodb://127.0.0.1:27017/25_node_internship").then(()=>{
